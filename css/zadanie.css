@@ -262,7 +262,10 @@ span {
 .naglowek-polecane {
   font-size: 24px;
   margin-bottom: 20px;
+  font-weight: 650;
   color: #313131;
+  font-family: 'Varela Round';
+  margin-left: 35px;
 }
 
 .kontener-produktow {
@@ -627,4 +630,178 @@ text-align: center;
 color: #FFFFFF;
 
 }
+.foteczki{
+  background-color: #f9f9f9;
+  position: relative;
+  width: 100%;
+  height: 1450px;
+}
 
+.fota1{
+  position: absolute;
+  left: 350px;
+  top: 30px
+  
+}
+.fota{
+  position: relative
+}
+.naglowek-polecane1 {
+  font-size: 27px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #313131;
+  font-family: 'Varela Round';
+  margin-left: 350px;
+  margin-top: 70px;
+}
+.tekst1{
+  position:absolute;
+  right: 400px;
+  top: 0px ;
+  font-family: 'Poppins';
+font-style: normal;
+font-size: 25px;
+line-height: 30px;
+font-weight: 600;
+
+
+color: #313131;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.lorem1{
+    position:absolute;
+  right: 425px;
+  top: 40px ;
+  font-family: 'Verala Round';
+font-style: normal;
+font-size: 20px;
+line-height: 30px;
+max-width: 500px;
+color: #313131;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.link1{
+     position:absolute;
+  right: 790px;
+  top: 250px ;
+  font-family: 'Verala Round';
+font-style: normal;
+font-size: 21px;
+line-height: 30px;
+color: #313131;
+flex: none;
+text-decoration: none;
+z-index: 2;
+}
+.tekst2{
+  position:absolute;
+  left: 350px;
+  top: 480px ;
+  font-family: 'Poppins';
+font-style: normal;
+font-size: 25px;
+line-height: 30px;
+font-weight: 600;
+
+
+color: #313131;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.lorem2{
+    position:absolute;
+  left: 355px;
+  top: 550px ;
+  font-family: 'Verala Round';
+font-style: normal;
+font-size: 20px;
+line-height: 30px;
+max-width: 500px;
+color: #313131;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.link2{
+     position:absolute;
+  left: 350px;
+  top: 730px ;
+  font-family: 'Verala Round';
+font-style: normal;
+font-size: 21px;
+line-height: 30px;
+color: #313131;
+flex: none;
+text-decoration: none;
+z-index: 2;
+}
+.fota2{
+  position: absolute;
+  right: 350px;
+  top: 500px
+  
+}
+.fota3{
+  position: absolute;
+  left: 350px;
+  top: 970px
+  
+}
+.tekst3{
+  position:absolute;
+  right: 400px;
+  top: 950px ;
+  font-family: 'Poppins';
+font-style: normal;
+font-size: 25px;
+line-height: 30px;
+font-weight: 600;
+
+
+color: #313131;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.lorem3{
+    position:absolute;
+  right: 425px;
+  top: 1020px ;
+  font-family: 'Verala Round';
+font-style: normal;
+font-size: 20px;
+line-height: 30px;
+max-width: 500px;
+color: #313131;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.link3{
+     position:absolute;
+  right: 790px;
+  top: 1220px ;
+  font-family: 'Verala Round';
+font-style: normal;
+font-size: 21px;
+line-height: 30px;
+color: #313131;
+flex: none;
+text-decoration: none;
+z-index: 2;
+}

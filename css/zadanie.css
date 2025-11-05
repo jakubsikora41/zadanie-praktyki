@@ -200,6 +200,7 @@ span {
   color: #176d0b;
   margin-top: 45px;
   margin-right: 80px;
+  z-index: 3;
 }
 
 .tekst-czerwiec {
@@ -331,7 +332,7 @@ span {
 }
 
 .przycisk-koszyk {
-  background-color: #2ecc71;
+  background-color: #24781a;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -496,7 +497,7 @@ line-height: 24px;
 .warto{
 position: absolute;
 top: 80px;
-left: 300px;
+left: 15%;
 font-family: 'Varela Round';
 font-style: normal;
 font-weight: 400;
@@ -519,7 +520,7 @@ color: #313131;
 
 position: absolute;
 top: 80px;
-right: 100px;
+right: 10%;
 max-width: 800px;
 font-family: 'Varela Round';
 font-style: normal;
@@ -534,7 +535,7 @@ color: #313131;
  
 position: absolute;
 top: 350px;
-right: 830px;
+right: 48%;
 text-decoration: none;
 
 
@@ -543,7 +544,7 @@ font-style: normal;
 font-weight: 550;
 font-size: 18px;
 line-height: 19px;
-
+min-width: 140px;
 
 color: #313131;
 
@@ -600,7 +601,7 @@ transform: translateX(50%);
 .zielony{
   position: absolute;
 top: 183px;
-right: 670px;
+right: 35.5%;
 transform: translateX(50%);
 background-color: #24781a;
 border: none;
@@ -690,7 +691,7 @@ flex-grow: 0;
 }
 .link1{
      position:absolute;
-  right: 790px;
+  right: 810px;
   top: 250px ;
   font-family: 'Verala Round';
 font-style: normal;
@@ -737,7 +738,7 @@ flex-grow: 0;
 .link2{
      position:absolute;
   left: 350px;
-  top: 730px ;
+  top: 750px ;
   font-family: 'Verala Round';
 font-style: normal;
 font-size: 21px;
@@ -794,7 +795,7 @@ flex-grow: 0;
 }
 .link3{
      position:absolute;
-  right: 790px;
+  right: 810px;
   top: 1220px ;
   font-family: 'Verala Round';
 font-style: normal;
@@ -804,4 +805,130 @@ color: #313131;
 flex: none;
 text-decoration: none;
 z-index: 2;
+}
+.linki{
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 280px;
+}
+.pomoc{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #313131;
+position: absolute;
+left: 350px;
+top: 20px;
+
+
+}
+.odnosniki1{
+  position: absolute;
+  list-style: none;
+  left: 310px;
+  top: 82px;
+}
+li{
+  margin-bottom: 20px;
+}
+a{
+
+text-decoration: none;
+width: 111px;
+height: 14px;
+font-family: 'Varela Round';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #313131;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.mojekonto{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #313131;
+position: absolute;
+left: 550px;
+top: 20px;
+}
+.odnosniki2{
+  position: absolute;
+  list-style: none;
+  left: 510px;
+  top: 82px;
+}
+.platnosciidostawa{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #313131;
+position: absolute;
+left: 750px;
+top: 20px;
+}
+.odnosniki3{
+  position: absolute;
+  list-style: none;
+  left: 710px;
+  top: 82px;
+}
+.informacje{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #313131;
+position: absolute;
+left: 1050px;
+top: 20px;
+}
+.odnosniki4{
+  position: absolute;
+  list-style: none;
+  left: 1010px;
+  top: 82px;
+}
+.onas{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #313131;
+position: absolute;
+left: 1250px;
+top: 20px;
+}
+.odnosniki5{
+  position: absolute;
+  list-style: none;
+  left: 1210px;
+  top: 82px;
+}
+.strzalkagora{
+  background-color:#24781a ;
+  border: none;
+  height: 35px;
+  width: 55px;
+  position: absolute;
+  left: 1610px;
+  top: 107px;
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border-radius: 9px;
 }

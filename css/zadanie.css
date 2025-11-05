@@ -449,7 +449,6 @@ span {
   width: 500px;
   z-index: 2;
   height: 80%;
-
 font-family: 'Pacifico';
 font-style: normal;
 font-weight: 400;
@@ -480,13 +479,11 @@ font-size: 16px;
 line-height: 24px;
 color: white;
 line-height: 24px;
-
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-53%);
   cursor: pointer;
-  
 }
 .dlaczego{
   background-color: white;
@@ -505,19 +502,13 @@ font-size: 48px;
 line-height: 58px;
 display: flex;
 align-items: center;
-
 display: block; 
   white-space: normal; 
   word-break: break-word;
   max-width: 600px;
-
-
-
 color: #313131;
 }
 .lorem{
- 
-
 position: absolute;
 top: 80px;
 right: 10%;
@@ -528,8 +519,6 @@ font-weight: 400;
 font-size: 17px;
 line-height: 150%;
 color: #313131;
-
-
 }
 .zobacz-wiecej{
  
@@ -537,23 +526,16 @@ position: absolute;
 top: 350px;
 right: 48%;
 text-decoration: none;
-
-
 font-family: 'Varela Round';
 font-style: normal;
 font-weight: 550;
 font-size: 18px;
 line-height: 19px;
 min-width: 140px;
-
 color: #313131;
-
-
-
 flex: none;
 order: 0;
 flex-grow: 0;
-
 }
 .szponcik{
   background-color: #24781a;
@@ -575,12 +557,7 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 1.1px;
-
-
-
 color: #FFFFFF;
-
-
 }
 .pole-email{
   width: 35%;
@@ -599,7 +576,7 @@ right: 50%;
 transform: translateX(50%);
 }
 .zielony{
-  position: absolute;
+position: absolute;
 top: 183px;
 right: 35.5%;
 transform: translateX(50%);
@@ -609,13 +586,13 @@ border-radius: 15px;
 width: 90px;
 height: 45px;
 display: flex;
-  align-items: center;     
-  justify-content: center;
+align-items: center;     
+justify-content: center;
 z-index: 10;
 cursor: pointer;
 }
-.dolacz{
-    position: absolute;
+.dolacz{ 
+position: absolute;
 top: 250px;
 right: 50.5%;
 max-width: 500px;
@@ -625,11 +602,8 @@ font-style: normal;
 font-weight: 550;
 font-size: 16px;
 line-height: 150%;
-
 text-align: center;
-
 color: #FFFFFF;
-
 }
 .foteczki{
   background-color: #f9f9f9;
@@ -642,7 +616,6 @@ color: #FFFFFF;
   position: absolute;
   left: 350px;
   top: 30px
-  
 }
 .fota{
   position: relative
@@ -665,15 +638,10 @@ font-style: normal;
 font-size: 25px;
 line-height: 30px;
 font-weight: 600;
-
-
 color: #313131;
-
-
 flex: none;
 order: 0;
 flex-grow: 0;
-
 }
 .lorem1{
     position:absolute;
@@ -711,15 +679,10 @@ font-style: normal;
 font-size: 25px;
 line-height: 30px;
 font-weight: 600;
-
-
 color: #313131;
-
-
 flex: none;
 order: 0;
 flex-grow: 0;
-
 }
 .lorem2{
     position:absolute;
@@ -752,13 +715,11 @@ z-index: 2;
   position: absolute;
   right: 350px;
   top: 500px
-  
 }
 .fota3{
   position: absolute;
   left: 350px;
   top: 970px
-  
 }
 .tekst3{
   position:absolute;
@@ -769,15 +730,10 @@ font-style: normal;
 font-size: 25px;
 line-height: 30px;
 font-weight: 600;
-
-
 color: #313131;
-
-
 flex: none;
 order: 0;
 flex-grow: 0;
-
 }
 .lorem3{
     position:absolute;
@@ -931,4 +887,27 @@ top: 20px;
   align-items:center;
   justify-content: center;
   border-radius: 9px;
+}
+.zakonczenie{
+  background-color:#f9f9f9;
+  width: 100%;
+  height: 48px;
+  position: relative;
+}
+.shoper{
+width: 160px;
+height: 14px;
+font-family: 'Varela Round';
+font-style: normal;
+font-weight:500;
+font-size: 14px;
+line-height: 14px;
+text-align: center;
+text-decoration-line: underline;
+color: #313131;
+left: 50%;
+transform: translateX(-50%);
+position: absolute;
+top: 50%;
+min-width: 240px;
 }

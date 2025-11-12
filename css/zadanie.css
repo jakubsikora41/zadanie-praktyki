@@ -1,7 +1,8 @@
 body{
-  background-color:#f9f9f9;;
+  background-color:#f9f9f9;
 }
-.pasek-kontaktu {
+
+.contact-bar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -13,22 +14,22 @@ body{
   font-size: 15px;
 }
 
-.element-kontaktu {
+.contact-item {
   display: flex;
   align-items: center;
   gap: 10px;
   color: #333;
 }
 
-.ikona {
+.icon {
   width: 18px;
   height: 18px;
   object-fit: contain;
 }
 
-.numer-tekst {
+.phone-text,
+.email-text {
   font-family: 'Varela Round';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -37,25 +38,14 @@ body{
   color: #313131;
 }
 
-.mail-tekst {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  display: flex;
-  align-items: center;
-  color: #313131;
-}
-
-.naglowek-glowny {
+.main-header {
   background-color: #fff;
   padding: 15px 20px;
   border-bottom: 1px solid #ddd;
   font-family: Arial, sans-serif;
 }
 
-.gorna-sekcja {
+.top-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,28 +53,28 @@ body{
   gap: 30px;
 }
 
-.logo-blok {
+.logo-block {
   font-size: 28px;
   font-weight: bold;
   color: green;
 }
 
-.blok-szukania {
+.search-block {
   position: relative;
   width: 100%;
   max-width: 500px;
 }
 
-.pole-szukaj {
+.search-input {
   width: 100%;
-  padding: 8px 40px 8px 12px; 
+  padding: 8px 40px 8px 12px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 9px;
   box-sizing: border-box;
 }
 
-.ikona-szukaj {
+.search-icon {
   position: absolute;
   right: 12px;
   top: 8px;
@@ -93,20 +83,20 @@ body{
   pointer-events: none;
 }
 
-.ikony-glowne {
+.main-icons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.koszyk-blok {
+.cart-block {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 14px;
 }
 
-.menu-glowne {
+.main-menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -114,7 +104,7 @@ body{
   margin-top: 15px;
 }
 
-.element-menu {
+.menu-item {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -123,7 +113,7 @@ body{
   font-size: 15px;
 }
 
-.link-konto {
+.account-link {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -132,7 +122,7 @@ body{
   font-size: 14px;
 }
 
-.link-konto .ikona {
+.account-link .icon {
   width: 24px;
   height: 24px;
   object-fit: contain;
@@ -140,13 +130,12 @@ body{
 
 span {
   font-family: 'Varela Round';
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   color: #313131;
 }
 
-.baner-promocyjny {
+.promo-banner {
   position: relative;
   width: 100%;
   max-width: 5000px;
@@ -157,7 +146,7 @@ span {
   border: 1px solid #ccc;
 }
 
-.obrazek-baner {
+.banner-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -167,22 +156,21 @@ span {
   z-index: 1;
 }
 
-.ramka-promocyjna {
+.promo-frame {
   position: absolute;
   top: 90px;
   left: 0px;
-  
   z-index: 2;
   background-color: white;
   padding: 0px;
   width: 650px;
   height: 300px;
-  text-align: right; 
+  text-align: right;
   padding-right: 100px;
   font-family: Arial, sans-serif;
 }
 
-.grafika-postaci {
+.character-graphic {
   position: absolute;
   bottom: 20px;
   left: 90px;
@@ -192,9 +180,8 @@ span {
   object-fit: contain;
 }
 
-.tekst-rabat {
+.discount-text {
   font-family: 'Pacifico', cursive;
-  font-style: normal;
   font-size: 90px;
   line-height: 0px;
   color: #176d0b;
@@ -203,25 +190,23 @@ span {
   z-index: 3;
 }
 
-.tekst-czerwiec {
+.month-text {
   font-family: 'Varela Round';
-  font-style: normal;
   font-weight: 400;
   font-size: 35px;
   margin-right: 80px;
   color: #313131;
 }
 
-.tekst-dzieci {
+.kids-text {
   font-family: 'Varela Round';
-  font-style: normal;
   font-weight: 400;
   font-size: 35px;
   margin-left: 300px;
   color: #313131;
 }
 
-.ikony-promocyjne {
+.promo-icons {
   background-color: #5fd2e8;
   padding: 40px 20px;
   display: flex;
@@ -233,7 +218,7 @@ span {
   box-sizing: border-box;
 }
 
-.blok-ikony {
+.icon-block {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -242,52 +227,64 @@ span {
   font-family: 'Varela Round', sans-serif;
 }
 
-.grafika-ikony {
+.icon-image {
   width: 50px;
   height: 50px;
 }
 
-.blok-ikony p {
+.icon-block p {
   margin: 0;
   font-size: 16px;
   line-height: 1.4;
 }
-.sekcja-polecane {
+
+.featured-section {
   padding: 40px 20px;
   font-family: 'Varela Round', sans-serif;
   background-color: #f9f9f9;
   position: relative;
-  margin-bottom: 100px
+  margin-bottom: 100px;
+ 
+ 
 }
 
-.naglowek-polecane {
+.featured-heading {
   font-size: 24px;
   margin-bottom: 20px;
   font-weight: 650;
   color: #313131;
   font-family: 'Varela Round';
   margin-left: 35px;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
 }
 
-.kontener-produktow {
+.products-container {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  align-items: center;  
 }
 
-.lista-produktow {
+.products-list {
   display: flex;
   gap: 40px;
   padding-bottom: 10px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  justify-content: flex-start;
+  padding-left: 0;
+  align-items: center;
 }
 
-.produkt {
+.product {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  min-width: 350px; 
+  min-width: 350px;
   position: relative;
   flex-shrink: 0;
   display: flex;
@@ -297,41 +294,47 @@ span {
   margin-left: 30px;
 }
 
-.obrazek-produktu {
+.product-image {
+  width: 103%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.product-image2{
   width: 103%;
   height: auto;
   border-radius: 4px;
   margin-bottom: 10px;
 }
 
-.tytul-produktu {
+.product-title {
   font-size: 15px;
   color: #313131;
   margin-top: 20px;
 }
 
-.cena-produktu {
+.product-price {
   font-size: 16px;
   font-weight: bold;
   color: #313131;
   margin-bottom: 10px;
 }
 
-.cena-promocyjna {
+.promo-price {
   font-size: 16px;
   font-weight: bold;
   color: #e74c3c;
   margin-bottom: 10px;
 }
 
-.cena-stara {
+.old-price {
   text-decoration: line-through;
   color: #999;
   margin-left: 5px;
   font-weight: normal;
 }
 
-.przycisk-koszyk {
+.add-cart-btn {
   background-color: #24781a;
   color: white;
   border: none;
@@ -342,13 +345,15 @@ span {
   transition: background-color 0.3s ease;
 }
 
-.przycisk-koszyk:hover {
+.add-cart-btn:hover {
   background-color: #27ae60;
 }
 
-.etykieta-nowa {
+.badge-new,
+.badge-new-1,
+.badge-sale,
+.badge-sale-1 {
   position: absolute;
-  top: 40px;
   left: 10px;
   background-color: #2ecc71;
   color: white;
@@ -358,42 +363,23 @@ span {
   font-weight: bold;
 }
 
-.etykieta-nowa1 {
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  background-color: #2ecc71;
-  color: white;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-}
+.badge-new { 
+  top: 40px; }
 
-.etykieta-promocja {
-  position: absolute;
-  top: 15px;
-  left: 10px;
-  background-color: #e74c3c;
-  color: white;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-.etykieta-promocja1 {
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  background-color: #e74c3c;
-  color: white;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-}
+.badge-new-1 {
+   top: 20px; }
 
-.przycisk-przewijania {
+.badge-sale,
+.badge-sale-1 {
+  background-color: #e74c3c;
+}
+.badge-sale { 
+  top: 15px; }
+  
+.badge-sale-1 {
+   top: 20px; }
+
+.scroll-btn {
   position: absolute;
   top: 50%;
   right: 0;
@@ -406,15 +392,14 @@ span {
   cursor: pointer;
 }
 
-
-.baner {
+.banner {
   position: relative;
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
 
-.baner .tlo {
+.banner-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -424,490 +409,555 @@ span {
   z-index: 1;
 }
 
-
-.baner .books {
+.books-img {
   position: absolute;
   right: 0;
-  bottom: -5px; 
+  bottom: -5px;
   width: 1100px;
   z-index: 2;
   height: 103%;
-  
 }
+
 .franek{
-   position: absolute;
+  position: absolute;
   left: 0;
-  bottom: -10px; 
+  bottom: -10px;
   width: 500px;
   z-index: 2;
   height: 80%;
 }
-.polecane-produkty{
+
+.see-featured{
   position: absolute;
   left: 400px;
-  bottom: -10px; 
+  bottom: -10px;
   width: 500px;
   z-index: 2;
   height: 80%;
-font-family: 'Pacifico';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 84px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #115009;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  font-family: 'Pacifico';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 84px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #115009;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.zobacz-wszystkie{
-  background-color:#2ecc71 ;
-  border: 0px;
+
+.see-all-btn{
+  border: 0;
   border-radius: 7px;
   padding: 8px 24px;
-  gap: 8px;
   width: 184px;
   height: 40px;
   background: #24781A;
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: white;
-line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-53%);
   cursor: pointer;
 }
-.dlaczego{
+
+.why-section{
   background-color: white;
   width: 100%;
-  height: 500px;
   position: relative;
+  padding: 60px 20px;
 }
-.warto{
-position: absolute;
-top: 80px;
-left: 15%;
-font-family: 'Varela Round';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-display: flex;
-align-items: center;
-display: block; 
-  white-space: normal; 
-  word-break: break-word;
-  max-width: 600px;
-color: #313131;
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
 }
-.lorem{
-position: absolute;
-top: 80px;
-right: 10%;
-max-width: 800px;
-font-family: 'Varela Round';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 150%;
-color: #313131;
+
+.why-title{
+  font-family: 'Varela Round';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #313131;
+  margin: 0;
 }
-.zobacz-wiecej{
- 
-position: absolute;
-top: 350px;
-right: 48%;
-text-decoration: none;
-font-family: 'Varela Round';
-font-style: normal;
-font-weight: 550;
-font-size: 18px;
-line-height: 19px;
-min-width: 140px;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
+
+.why-text{
+  font-family: 'Varela Round';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #313131;
+  margin: 0;
 }
-.szponcik{
+
+.read-more-link{
+  display: inline-block;
+  margin-top: 16px;
+  text-decoration: none;
+  font-family: 'Varela Round';
+  font-weight: 550;
+  font-size: 18px;
+  color: #313131;
+}
+
+
+.newsletter-heading{
+  font-family: 'Varela Round';
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 1.1px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.newsletter-form {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 720px;
+  width: 100%;
+  justify-content: center;
+}
+
+.newsletter-section{
   background-color: #24781a;
   position: relative;
   width: 100%;
-  height: 500px;
+  padding: 60px 20px;
+  text-align: center;
 }
-.news{
-position: absolute;
-top: 30px;
-right: 50%;
-transform: translateX(50%);
-font-family: 'Varela Round';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 48px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 1.1px;
-color: #FFFFFF;
+
+
+.input-wrap {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
 }
-.pole-email{
-  width: 35%;
-  height: 12%; 
+
+
+.email-input{
+  flex: 1 1 480px;
+  min-width: 600px;
+  height: 48px;
   font-size: 16px;
   border: 1px solid #ccc;
   text-align: left;
-  padding-left: 20px;
+  padding: 0 106px 0 20px;
   border-radius: 20px;
   box-sizing: border-box;
-  font-family: 'Verala Round';
+  font-family: 'Varela Round';
   font-weight: 700;
+}
+
+.submit-btn{
+  background-color: #24781a;
+  border: none;
+  border-radius: 15px;
+  width: 90px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
   position: absolute;
-top: 175px;
-right: 50%;
-transform: translateX(50%);
+  right: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  box-sizing: border-box;
 }
-.zielony{
-position: absolute;
-top: 183px;
-right: 35.5%;
-transform: translateX(50%);
-background-color: #24781a;
-border: none;
-border-radius: 15px;
-width: 90px;
-height: 45px;
-display: flex;
-align-items: center;     
-justify-content: center;
-z-index: 10;
-cursor: pointer;
+
+
+.join-text{
+  max-width: 800px;
+  margin: 16px auto 0;
+  font-family: 'Varela Round';
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
 }
-.dolacz{ 
-position: absolute;
-top: 250px;
-right: 50.5%;
-max-width: 500px;
-transform: translateX(50%);
-font-family: 'Varela Round';
-font-style: normal;
-font-weight: 550;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: #FFFFFF;
-}
-.foteczki{
+
+.photos-section{
   background-color: #f9f9f9;
   position: relative;
   width: 100%;
-  height: 1450px;
+  padding: 70px 20px 40px;
 }
 
-.fota1{
-  position: absolute;
-  left: 350px;
-  top: 30px
-}
-.fota{
-  position: relative
-}
-.naglowek-polecane1 {
+.blog-heading {
   font-size: 27px;
   margin-bottom: 30px;
   font-weight: 600;
   color: #313131;
   font-family: 'Varela Round';
-  margin-left: 350px;
-  margin-top: 70px;
+  text-align: center;
 }
-.tekst1{
-  position:absolute;
-  right: 400px;
-  top: 0px ;
+
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+   position: relative;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+
+.photo2 {
+  order: 2;
+}
+.photo-content { 
+  order: 1;
+}
+
+.photo1,.photo2,.photo3{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.photo-content{
+  margin: 0 0 12px;
+}
+
+.blog-text1, .blog-text2, .blog-text3{
   font-family: 'Poppins';
-font-style: normal;
-font-size: 25px;
-line-height: 30px;
-font-weight: 600;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #313131;
 }
-.lorem1{
-    position:absolute;
-  right: 425px;
-  top: 40px ;
-  font-family: 'Verala Round';
-font-style: normal;
-font-size: 20px;
-line-height: 30px;
-max-width: 500px;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
+
+.blog-desc1, .blog-desc2, .blog-desc3{
+  font-family: 'Varela Round';
+  font-size: 20px;
+  line-height: 30px;
+  color: #313131;
 }
-.link1{
-     position:absolute;
-  right: 810px;
-  top: 250px ;
-  font-family: 'Verala Round';
-font-style: normal;
-font-size: 21px;
-line-height: 30px;
-color: #313131;
-flex: none;
-text-decoration: none;
-z-index: 2;
+
+.blog-link1, .blog-link2, .blog-link3{
+  font-family: 'Varela Round';
+  font-size: 21px;
+  line-height: 30px;
+  color: #313131;
+  text-decoration: none;
 }
-.tekst2{
-  position:absolute;
-  left: 350px;
-  top: 480px ;
-  font-family: 'Poppins';
-font-style: normal;
-font-size: 25px;
-line-height: 30px;
-font-weight: 600;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-.lorem2{
-    position:absolute;
-  left: 355px;
-  top: 550px ;
-  font-family: 'Verala Round';
-font-style: normal;
-font-size: 20px;
-line-height: 30px;
-max-width: 500px;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-.link2{
-     position:absolute;
-  left: 350px;
-  top: 750px ;
-  font-family: 'Verala Round';
-font-style: normal;
-font-size: 21px;
-line-height: 30px;
-color: #313131;
-flex: none;
-text-decoration: none;
-z-index: 2;
-}
-.fota2{
-  position: absolute;
-  right: 350px;
-  top: 500px
-}
-.fota3{
-  position: absolute;
-  left: 350px;
-  top: 970px
-}
-.tekst3{
-  position:absolute;
-  right: 400px;
-  top: 950px ;
-  font-family: 'Poppins';
-font-style: normal;
-font-size: 25px;
-line-height: 30px;
-font-weight: 600;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-.lorem3{
-    position:absolute;
-  right: 425px;
-  top: 1020px ;
-  font-family: 'Verala Round';
-font-style: normal;
-font-size: 20px;
-line-height: 30px;
-max-width: 500px;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-.link3{
-     position:absolute;
-  right: 810px;
-  top: 1220px ;
-  font-family: 'Verala Round';
-font-style: normal;
-font-size: 21px;
-line-height: 30px;
-color: #313131;
-flex: none;
-text-decoration: none;
-z-index: 2;
-}
-.linki{
+
+.links-section{
   position: relative;
   background-color: white;
   width: 100%;
-  height: 280px;
+  padding: 32px 20px;
 }
-.pomoc{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-color: #313131;
-position: absolute;
-left: 350px;
-top: 20px;
 
-
+.links-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 60px;
+  align-items: flex-start;
+  position: relative;
 }
-.odnosniki1{
-  position: absolute;
+
+.links-block {
+  margin: 0 0 12px;
+}
+
+.help-title, .my-account, .pay-delivery, .info-title, .about-title{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #313131;
+}
+
+.links1, .links2, .links3, .links4, .links5{
   list-style: none;
-  left: 310px;
-  top: 82px;
+  padding-left: 0;
+  margin: 0;
 }
+
 li{
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
-a{
 
-text-decoration: none;
-width: 111px;
-height: 14px;
-font-family: 'Varela Round';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-color: #313131;
-flex: none;
-order: 0;
-flex-grow: 0;
+a {
+  text-decoration: none;
+  font-family: 'Varela Round';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #313131;
+}
 
-}
-.mojekonto{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-color: #313131;
-position: absolute;
-left: 550px;
-top: 20px;
-}
-.odnosniki2{
-  position: absolute;
-  list-style: none;
-  left: 510px;
-  top: 82px;
-}
-.platnosciidostawa{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-color: #313131;
-position: absolute;
-left: 750px;
-top: 20px;
-}
-.odnosniki3{
-  position: absolute;
-  list-style: none;
-  left: 710px;
-  top: 82px;
-}
-.informacje{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-color: #313131;
-position: absolute;
-left: 1050px;
-top: 20px;
-}
-.odnosniki4{
-  position: absolute;
-  list-style: none;
-  left: 1010px;
-  top: 82px;
-}
-.onas{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-color: #313131;
-position: absolute;
-left: 1250px;
-top: 20px;
-}
-.odnosniki5{
-  position: absolute;
-  list-style: none;
-  left: 1210px;
-  top: 82px;
-}
-.strzalkagora{
+.to-top-btn{
   background-color:#24781a ;
   border: none;
   height: 35px;
   width: 55px;
-  position: absolute;
-  left: 1610px;
-  top: 107px;
   cursor: pointer;
   display: flex;
   align-items:center;
   justify-content: center;
   border-radius: 9px;
+  position: absolute;
+  right: 0;
+  top: 30px;
 }
-.zakonczenie{
+
+.footer-end{
   background-color:#f9f9f9;
   width: 100%;
   height: 48px;
   position: relative;
 }
-.shoper{
-width: 160px;
-height: 14px;
-font-family: 'Varela Round';
-font-style: normal;
-font-weight:500;
-font-size: 14px;
-line-height: 14px;
-text-align: center;
-text-decoration-line: underline;
-color: #313131;
-left: 50%;
-transform: translateX(-50%);
-position: absolute;
-top: 50%;
-min-width: 240px;
+
+.shoper-link{
+  font-family: 'Varela Round';
+  font-weight:500;
+  font-size: 14px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #313131;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 50%;
+  min-width: 240px;
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    gap: 12px;
+    padding: 10px 12px;
+  }
+
+  .logo-block img {
+    max-width: 160px;
+    height: auto;
+  }
+
+  .search-block {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .search-input {
+    font-size: 14px;
+    padding: 8px 36px 8px 12px;
+  }
+
+  .main-icons {
+    order: 2;
+    gap: 8px;
+  }
+
+  .main-menu {
+    margin-top: 10px;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .promo-banner {
+    height: 320px;
+  }
+
+  .promo-frame {
+    position: absolute;
+    left: 0px;
+    right: 20px;     
+    top: 60px;
+    height: auto;
+    padding-right: 20px;
+    text-align: left;
+    width: auto;      
+  }
+  .month-text {
+  font-family: 'Varela Round';
+  font-weight: 400;
+  font-size: 35px;
+  margin-left: 110px;
+  color: #313131;
+}
+
+  .discount-text {
+    font-size: 48px;
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+
+  .kids-text {
+    margin-left: 110px;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .character-graphic {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 100px;
+  height: auto;
+  z-index: 3;
+  object-fit: contain;
+}
+  .products-list {
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .product {
+    min-width: 250px;
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .featured-heading {
+    margin-left: 16px;
+  }
+
+  .photos-section {
+    padding: 20px 16px 40px 16px;
+  }
+
+  .blog-heading {
+    margin-left: 0;
+    margin-top: 0;
+    position: static;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .links-section {
+    padding: 24px 16px 40px 16px;
+  }
+
+  .links-container {
+    gap: 24px;
+  }
+
+  .newsletter-section {
+    padding: 40px 16px 48px 16px;
+  }
+
+  .newsletter-heading {
+    font-size: 36px;
+  }
+
+ 
+  .newsletter-form {
+    width: 100%;
+    justify-content: center;
+  }
+
+ .input-wrap {
+    position: relative;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .email-input {
+    width: 100%;
+    min-width: auto;          
+    height: 44px;
+    padding: 0 64px 0 12px;    
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+  .submit-btn {
+    position: absolute;
+    right: 8px;                
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;               
+    height: 40px;
+    border-radius: 12px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .see-all-btn {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 16px auto 0;
+    display: block;
+  }
+
+  .to-top-btn {
+    display: none;
+  }
+
+  .why-container {
+    grid-template-columns: 1fr;
+  }
+
+  .why-title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 8px;
+  }
+
+.books-img {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 200px;
+  z-index: 2;
+  height: 103%;
+}
+
+.franek{
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: 200px;
+  z-index: 2;
+  height: 80%;
+}
+.see-featured{
+  position: absolute;
+  left: 110px;
+  bottom: -10px;
+  width: 250px;
+  z-index: 2;
+  height: 80%;
+  font-weight: 200;
+  font-size: 27px;
+}
+.products-container {
+  position: relative;
+  overflow: hidden;
+   display: flex;
+  flex-direction: row;
+  align-items: stretch
+}
+.product {
+ min-height: 600px;
+}
+
 }
